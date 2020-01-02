@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { Navbar } from "react-bootstrap";
 import Routes from "./Router";
 import './App.css';
@@ -10,28 +10,31 @@ function App() {
     <div className="App container">
         <Navbar>
             <Navbar.Brand>
-                <Link to="/">Scratch</Link>
+                <NavLink to="/" exact>Scratch</NavLink>
             </Navbar.Brand>
             <Navbar.Brand>
-                <Link to="/alert">Alert</Link>
+                <NavLink to="/alert">Alert</NavLink>
             </Navbar.Brand>
             <Navbar.Brand>
-                <Link to="/alertDismissible">Alert Dismissible</Link>
+                <NavLink to="/alertDismissible">Alert Dismissible</NavLink>
             </Navbar.Brand>
             <Navbar.Brand>
-                <Link to="/flatButton">Flat Button</Link>
+                <NavLink to="/flatButton">Flat Button</NavLink>
             </Navbar.Brand>
             <Navbar.Brand>
-                <Link to="/layout">Layout</Link>
+                <NavLink to="/layout">Layout</NavLink>
             </Navbar.Brand>
             <Navbar.Brand>
-                <Link to="/cards">Cards</Link>
+                <NavLink to="/cards">Cards</NavLink>
             </Navbar.Brand>
             <Navbar.Brand>
-                <Link to="/listGroup">List Group</Link>
+                <NavLink to="/listGroup">List Group</NavLink>
             </Navbar.Brand>
             <Navbar.Brand>
-                <Link to="/modal">Modal</Link>
+                <NavLink to="/modal">Modal</NavLink>
+            </Navbar.Brand>
+            <Navbar.Brand>
+                <NavLink to="/chat">Chat</NavLink>
             </Navbar.Brand>
         </Navbar>
         <Routes/>
